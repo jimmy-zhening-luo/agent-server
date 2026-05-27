@@ -6,7 +6,7 @@ import os
 app = FastAPI()
 openai = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-@app.post("/api/chatkit/session")
+@app.post("/chatkit")
 def create_chatkit_session():
     session = openai.chatkit.sessions.create({
       # ...
