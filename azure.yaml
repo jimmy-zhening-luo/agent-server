@@ -5,7 +5,7 @@
 # To learn more about the azure.yaml file, visit https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-schema
 
 # Name of the application.
-name: msdocs-python-fastapi-webapp-quickstart
+name: agent-server
 metadata:
   template: msdocs-python-fastapi-webapp-quickstart@0.0.1-beta
 services:
