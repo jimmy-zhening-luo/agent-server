@@ -12,7 +12,7 @@ from fastapi.responses import JSONResponse
 
 from openai import OpenAI
 
-DEFAULT_CHATKIT_BASE = "https://api.openai.com"
+CHATKIT_BASE = "https://api.openai.com"
 SESSION_COOKIE_NAME = "chatkit_session_id"
 SESSION_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 30
 
@@ -150,11 +150,7 @@ def resolve_user(cookies: Mapping[str, str]) -> tuple[str, str | None]:
 
 
 def chatkit_api_base() -> str:
-    return (
-        os.getenv("CHATKIT_API_BASE")
-        or os.getenv("VITE_CHATKIT_API_BASE")
-        or DEFAULT_CHATKIT_BASE
-    )
+  return CHATKIT_BASE
 
 
 def parse_json(response: httpx.Response) -> Mapping[str, Any]:
