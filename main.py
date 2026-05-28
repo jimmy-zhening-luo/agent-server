@@ -14,7 +14,7 @@ from openai import OpenAI
 
 DEFAULT_CHATKIT_BASE = "https://api.openai.com"
 SESSION_COOKIE_NAME = "chatkit_session_id"
-SESSION_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 30  # 30 days
+SESSION_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 30
 
 app = FastAPI(title="Xfinity AI support agent API")
 
@@ -34,7 +34,6 @@ async def health() -> Mapping[str, str]:
 
 @app.post("/api/create-session")
 async def create_session(request: Request) -> JSONResponse:
-    """Exchange a workflow id for a ChatKit client secret."""
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return respond({"error": "Missing OPENAI_API_KEY environment variable"}, 500)
