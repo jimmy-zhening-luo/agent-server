@@ -1,16 +1,16 @@
+import os
+import json
+import uuid
+import httpx
+
 from __future__ import annotations
+from typing import Any, Mapping
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+
 from openai import OpenAI
-
-import os
-import json
-import uuid
-from typing import Any, Mapping
-
-import httpx
 
 DEFAULT_CHATKIT_BASE = "https://api.openai.com"
 SESSION_COOKIE_NAME = "chatkit_session_id"
