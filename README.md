@@ -2,7 +2,11 @@
 
 [![Azure App Service Deploy](https://github.com/jimmy-zhening-luo/agent-server/actions/workflows/PROD.main.yml/badge.svg)](https://github.com/jimmy-zhening-luo/agent-server/actions/workflows/PROD.main.yml)
 
-Xfinity AI chat agent server
+Xfinity AI chat agent server. Negotiates session between ChatKit UI and OpenAI managed agent workflow.
+
+Hosted at [https://chat-server.jim.so](https://chat-server.jim.so).
+
+Health endpoint can be polled at [chat-server.jim.so/health](https://chat-server.jim.so/health).
 
 ## Client
 
