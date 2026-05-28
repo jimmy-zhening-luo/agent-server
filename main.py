@@ -1,10 +1,11 @@
+from __future__ import annotations
+
+from typing import Any, Mapping
+
 import os
 import json
 import uuid
 import httpx
-
-from __future__ import annotations
-from typing import Any, Mapping
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
