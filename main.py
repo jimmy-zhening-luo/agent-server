@@ -16,7 +16,7 @@ DEFAULT_CHATKIT_BASE = "https://api.openai.com"
 SESSION_COOKIE_NAME = "chatkit_session_id"
 SESSION_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 30
 
-app = FastAPI(title="Xfinity AI support agent API")
+app = FastAPI(title="Xfinity AI support agent session API")
 
 app.add_middleware(
     CORSMiddleware,
