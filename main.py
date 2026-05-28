@@ -131,7 +131,7 @@ def resolve_workflow_id(body: Mapping[str, Any]) -> str | None:
     if isinstance(workflow, Mapping):
         workflow_id = workflow.get("id")
     workflow_id = workflow_id or body.get("workflowId")
-    env_workflow = os.getenv("CHATKIT_WORKFLOW_ID") or os.getenv(
+    env_workflow = os.getenv(
         "VITE_CHATKIT_WORKFLOW_ID"
     )
     if not workflow_id and env_workflow:
