@@ -4,8 +4,6 @@
 
 Xfinity AI chat agent server. Negotiates session between ChatKit UI and OpenAI managed agent workflow.
 
-Hosted at [https://chat-server.jim.so](https://chat-server.jim.so).
-
 Health endpoint can be polled at [chat-server.jim.so/health](https://chat-server.jim.so/health).
 
 ## Client
